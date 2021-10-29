@@ -1,0 +1,23 @@
+{
+    "name": "learn-express",
+    "version": "0.0.1",
+    "description": "let's learn express",
+    "main": "app.js",
+    "scripts": {
+        "start": "nodemon app"
+    },
+    "author": "yunsung",
+    "license": "MIT",
+    "dependencies": {
+        "cookie-parser": "^1.4.5",
+        "dotenv": "^10.0.0",
+        "express": "^4.17.1",
+        "express-session": "^1.17.2",
+        "morgan": "^1.10.0",
+        "multer": "^1.4.2",
+        "nunjucks": "^3.2.3"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.7"
+    }
+}

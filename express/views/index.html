@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <meta charset = "UTF=8" />
+        <title>express server</title>
+    </head>
+    <body>
+        <ul>
+        {% set fruit = ['사과', '배','오렌지','복숭아','키위']%}
+        {%for item in fruit%}
+            <li>{{loop.index}}번째 {{item}}</li>
+            {%if item == '사과'%}
+                <p>this is apple</p>
+            {%elif item == '배'%}
+                <p>this is pear</p>
+            {%elif item == '오렌지'%}
+                <p>this is orange</p>
+            {%elif item == '복숭아'%}
+                <p>this is peach</p>
+            {%elif item == '키위'%}
+                <p>this is kiwi</p>
+            {%else%}
+                <p>not in list</p>\
+            {%endif%}
+        {% endfor %}
+        </ul>        
+    </body>
+</html>
